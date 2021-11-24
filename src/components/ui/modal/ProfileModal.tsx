@@ -1,4 +1,3 @@
-import Text from '../text/Text';
 import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
@@ -10,10 +9,8 @@ import { Container, Grid } from '@mui/material';
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 import NoMovie from '../../../assets/nomovie.jpg';
-import TextLink from '../text/TextLink';
 import { CastMember } from '../../models/CastMember';
 import React from 'react';
-import { truncate } from 'fs';
 import HorizontalCard from '../card/HorizontalCard';
 
 const useStyles = makeStyles({
@@ -29,6 +26,11 @@ const useStyles = makeStyles({
       border: '0px'
     },
     overflowY:'scroll'
+  },
+  "@media (max-width: 500px)": {
+    root: {
+      width: 400,
+    }
   },
   title: {
     color: '#e7e7e7',

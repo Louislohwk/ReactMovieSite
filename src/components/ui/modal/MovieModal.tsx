@@ -22,7 +22,7 @@ const useStyles = makeStyles({
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: 400,
-    height: '90vh',
+    maxHeight: '90vh',
     boxShadow: '24',
     '&:focus':{
       border: '0px'

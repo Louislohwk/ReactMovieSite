@@ -1,11 +1,10 @@
-import { Box, Typography, Card, CardContent, Grid, Button } from '@material-ui/core';
+import { Box, Card, Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
-import React, { useReducer } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Movie } from '../../models/Movie';
 import { actionCreators } from '../../redux/rootActionCreators';
-import movieReducer, { MOVIE_DEFAULT_STATE } from '../../redux/reducers/movieReducer';
 import { RootState } from '../../redux/reducers/rootReducer';
 import { getMovieCredits, getMovieDetails } from '../../services/MovieService';
 import MovieModal from '../modal/MovieModal';
@@ -84,7 +83,7 @@ const MovieCard = (props: Props) => {
   return (
     <Grid
         container
-        item xs={3}
+        item xs={12} md={4} lg={3}
         className={classes.root}
     >
         <Card className={classes.card}

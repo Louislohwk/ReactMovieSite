@@ -1,11 +1,10 @@
-import { Box, Container, makeStyles } from '@material-ui/core';
+import { Box, makeStyles } from '@material-ui/core';
 import { Grid } from '@mui/material'
 import MovieCard from '../../ui/card/MovieCard';
-import movieReducer, { MOVIE_DEFAULT_STATE } from '../../redux/reducers/movieReducer';
 import { useEffect, useReducer, useRef, useState } from 'react';
 import { getMovies } from '../../services/MovieService';
 import { Movie } from '../../models/Movie';
-import { Button, Pagination, Typography } from '@mui/material';
+import { Pagination, Typography } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../redux/reducers/rootReducer';
 import { bindActionCreators } from 'redux';
