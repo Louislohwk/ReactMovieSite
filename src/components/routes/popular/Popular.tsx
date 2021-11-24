@@ -81,7 +81,16 @@ const movieProps = moviesState.movies.map((item: Movie) => <MovieCard key={item.
   return (
     <Box className={classes.popBox}>
 
-      <Typography variant='h1' className={classes.title}>
+      <Typography sx={{
+        fontSize: {
+          lg: 100,
+          md: 75,
+          sm: 40,
+          xs: 30
+          }
+        }}
+        className={classes.title}
+      >
           POPULAR
       </Typography>
 
